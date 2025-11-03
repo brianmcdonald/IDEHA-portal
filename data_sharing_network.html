@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="9b82fa57a0184d4996bd0b490ed447c7" class="chart-container" style="width:1000px; height:700px; "></div>
+    <script>
+        var chart_9b82fa57a0184d4996bd0b490ed447c7 = echarts.init(
+            document.getElementById('9b82fa57a0184d4996bd0b490ed447c7'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_9b82fa57a0184d4996bd0b490ed447c7 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 1000,
+                "gravity": 0.2,
+                "edgeLength": 150,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8,
+                "fontSize": 10,
+                "valueAnimation": false
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 0.7,
+                "curveness": 0.3,
+                "type": "solid",
+                "color": "source"
+            },
+            "roam": true,
+            "draggable": true,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "IOM",
+                    "symbolSize": 50,
+                    "category": 0
+                },
+                {
+                    "name": "UNHCR",
+                    "symbolSize": 40,
+                    "category": 1
+                },
+                {
+                    "name": "WFP",
+                    "symbolSize": 40,
+                    "category": 1
+                },
+                {
+                    "name": "UNICEF",
+                    "symbolSize": 40,
+                    "category": 1
+                },
+                {
+                    "name": "WHO",
+                    "symbolSize": 35,
+                    "category": 1
+                },
+                {
+                    "name": "Ministry of Health",
+                    "symbolSize": 35,
+                    "category": 2
+                },
+                {
+                    "name": "National Bureau of Statistics",
+                    "symbolSize": 35,
+                    "category": 2
+                },
+                {
+                    "name": "Red Cross",
+                    "symbolSize": 30,
+                    "category": 3
+                },
+                {
+                    "name": "Save the Children",
+                    "symbolSize": 30,
+                    "category": 3
+                },
+                {
+                    "name": "Local NGO Network",
+                    "symbolSize": 25,
+                    "category": 3
+                }
+            ],
+            "categories": [
+                {
+                    "name": "IOM"
+                },
+                {
+                    "name": "UN Agencies"
+                },
+                {
+                    "name": "Government"
+                },
+                {
+                    "name": "NGOs"
+                }
+            ],
+            "edgeLabel": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "IOM",
+                    "target": "UNHCR"
+                },
+                {
+                    "source": "IOM",
+                    "target": "WFP"
+                },
+                {
+                    "source": "IOM",
+                    "target": "UNICEF"
+                },
+                {
+                    "source": "IOM",
+                    "target": "Ministry of Health"
+                },
+                {
+                    "source": "IOM",
+                    "target": "National Bureau of Statistics"
+                },
+                {
+                    "source": "UNHCR",
+                    "target": "WFP"
+                },
+                {
+                    "source": "UNHCR",
+                    "target": "Red Cross"
+                },
+                {
+                    "source": "WFP",
+                    "target": "Ministry of Health"
+                },
+                {
+                    "source": "UNICEF",
+                    "target": "Save the Children"
+                },
+                {
+                    "source": "WHO",
+                    "target": "Ministry of Health"
+                },
+                {
+                    "source": "WHO",
+                    "target": "IOM"
+                },
+                {
+                    "source": "Red Cross",
+                    "target": "Save the Children"
+                },
+                {
+                    "source": "Save the Children",
+                    "target": "Local NGO Network"
+                },
+                {
+                    "source": "Ministry of Health",
+                    "target": "National Bureau of Statistics"
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "IOM",
+                "UN Agencies",
+                "Government",
+                "NGOs"
+            ],
+            "selected": {},
+            "show": true,
+            "left": "left",
+            "top": "middle",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "Data Sharing Agreement Network (sample data)",
+            "target": "blank",
+            "subtext": "Organizations and their Data Sharing Relationships",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_9b82fa57a0184d4996bd0b490ed447c7.setOption(option_9b82fa57a0184d4996bd0b490ed447c7);
+    </script>
+</body>
+</html>
