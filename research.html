@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-01">
+<meta name="author" content="Brian Mc Donald">
 <meta name="keywords" content="Registration, Interoperability">
 
 <title>Registration &amp; Beneficiary Management Practices</title>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="research_files/libs/clipboard/clipboard.min.js"></script>
@@ -33,7 +53,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="research_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="research_files/libs/quarto-html/anchor.min.js"></script>
 <link href="research_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="research_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="research_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="research_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="research_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="research_files/libs/bootstrap/bootstrap-1e118674f8eeaf0dc11d6faf9a2d8791.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -49,17 +69,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements"><span class="header-section-number">1.1</span> Acknowledgements</a></li>
+  </ul></li>
   <li><a href="#survey-analysis" id="toc-survey-analysis" class="nav-link" data-scroll-target="#survey-analysis"><span class="header-section-number">2</span> Survey Analysis</a>
   <ul class="collapse">
   <li><a href="#profile-of-respondents" id="toc-profile-of-respondents" class="nav-link" data-scroll-target="#profile-of-respondents"><span class="header-section-number">2.1</span> Profile of respondents</a></li>
-  <li><a href="#registration" id="toc-registration" class="nav-link" data-scroll-target="#registration"><span class="header-section-number">2.2</span> Registration</a></li>
+  <li><a href="#registration" id="toc-registration" class="nav-link" data-scroll-target="#registration"><span class="header-section-number">2.2</span> Registration</a>
+  <ul class="collapse">
+  <li><a href="#purpose-and-basis" id="toc-purpose-and-basis" class="nav-link" data-scroll-target="#purpose-and-basis"><span class="header-section-number">2.2.1</span> Purpose and basis</a></li>
+  <li><a href="#deduplication" id="toc-deduplication" class="nav-link" data-scroll-target="#deduplication"><span class="header-section-number">2.2.2</span> Deduplication</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">2.2.3</span> Methods</a></li>
+  <li><a href="#authentication" id="toc-authentication" class="nav-link" data-scroll-target="#authentication"><span class="header-section-number">2.2.4</span> Authentication</a></li>
+  <li><a href="#data-sharing" id="toc-data-sharing" class="nav-link" data-scroll-target="#data-sharing"><span class="header-section-number">2.2.5</span> Data sharing</a></li>
+  </ul></li>
   <li><a href="#non-registrations-actors" id="toc-non-registrations-actors" class="nav-link" data-scroll-target="#non-registrations-actors"><span class="header-section-number">2.3</span> Non registrations actors</a></li>
   <li><a href="#systems-information" id="toc-systems-information" class="nav-link" data-scroll-target="#systems-information"><span class="header-section-number">2.4</span> Systems information</a></li>
   </ul></li>
   <li><a href="#data-sharing-graph" id="toc-data-sharing-graph" class="nav-link" data-scroll-target="#data-sharing-graph"><span class="header-section-number">3</span> Data Sharing Graph</a></li>
-  <li><a href="#data-journey" id="toc-data-journey" class="nav-link" data-scroll-target="#data-journey"><span class="header-section-number">4</span> Data Journey</a></li>
-  <li><a href="#comparing-data-points" id="toc-comparing-data-points" class="nav-link" data-scroll-target="#comparing-data-points"><span class="header-section-number">5</span> Comparing Data Points</a></li>
+  <li><a href="#comparing-data-points" id="toc-comparing-data-points" class="nav-link" data-scroll-target="#comparing-data-points"><span class="header-section-number">4</span> Comparing Data Points</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="research.pdf"><i class="bi bi-file-pdf-fill"></i>PDF</a></li><li><a href="research.epub"><i class="bi bi-file-text-fill"></i>Ebook</a></li></ul></div></nav>
 </div>
@@ -68,34 +99,34 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Registration &amp; Beneficiary Management Practices</h1>
-<p class="subtitle lead">Exploring existing registration and beneficiary management practices in South Sudan.</p>
+<p class="subtitle lead">Exploring registration &amp; beneficiary management practices in South Sudan</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>IOM </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 1, 2025</p>
+      <p class="date">19 November, 2025</p>
     </div>
   </div>
   
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 10, 2025</p>
-    </div>
-  </div>
     
   </div>
   
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    This research examines current registration and beneficiary management practices in South Sudan. It was conducted by the International Organization for Migration and supported with funding from ECHO and the collaboration from humanitarian organizations in South Sudan.
+    This research examined current registration and beneficiary management practices in South Sudan, to better understand registration data collection and management practices, the commonality of data fields, and the current extent of data sharing agreements among organizations. <br><br> It was conducted by the International Organization for Migration and supported with funding from ECHO and the collaboration from humanitarian organizations in South Sudan through a series of interviews, a survey and direct observation. <br><br> The study found a large variance in in all aspects of registration and beneficiary management, the practices around registration data collection, the data fields collected and systems capabilities that support the processes. <br><br> The implications of this variance pose significant challenges to targeted, coordinated multi-sectoral action, but by highlighting the key barriers and framing them through a lens of interoperability this study can support the collective effort in improving targeting, deduplication and referral practices in South Sudan.
   </div>
 </div>
 
@@ -119,7 +150,7 @@ Caution
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Note that this research is a working draft and still subject to considerable change.</p>
+<p>Note that this research is a working draft.</p>
 </div>
 </div>
 <section id="introduction" class="level1" data-number="1">
@@ -130,17 +161,23 @@ Caution
 <li><p>what are the practices, processes and tools that organizations use and to how are they similar or differ?</p></li>
 <li><p>what organizations have Data Sharing Agreements with each other and what does it look like as a network?</p></li>
 </ul>
-<p>Information from this analysis came from a survey to South Sudan organizations, individual and group interviews and observations, in Juba and Malakal in June and September 2025.</p>
+<p>Information from this analysis<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> came from a survey to South Sudan organizations, individual and group interviews and observations, in Juba and Malakal in June and September 2025.</p>
+<section id="acknowledgements" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="acknowledgements"><span class="header-section-number">1.1</span> Acknowledgements</h2>
+<p>This analysis was co-funded by the European Commission’s Humanitarian Office (ECHO).</p>
+<p><img src="ECHO.png" class="img-fluid" width="250"></p>
 <aside id="footnotes" class="footnotes footnotes-end-of-section" role="doc-footnote">
 <hr>
 <ol>
 <li id="fn1"><p>This analysis builds upon previous work done by the <a href="https://datastew.org">Collaborative Cash Delivery Network (CCD)</a> and DIGID<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>To identify patterns, this analysis makes use of <a href="https://arxiv.org/abs/2503.17517">Upsetplots</a> The selected dots represent selected values, the bars on the left represent the count of each value and the bars on top represent the count of intersecting/matching sets of values.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </aside>
 </section>
+</section>
 <section id="survey-analysis" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Survey Analysis</h1>
-<p>The survey was conducted between 27th June and 14th October 2025 and analyses response from 16 organization.</p>
+<p>The survey was conducted between 27th June and 14th October 2025 and contains responses from 16 organization.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <section id="profile-of-respondents" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="profile-of-respondents"><span class="header-section-number">2.1</span> Profile of respondents</h2>
 <p>Responses were received from international NGO’s nation NGO’s and UN entities.</p>
@@ -165,6 +202,12 @@ Caution
 <figcaption>Target populations served by respondent organizations</figcaption>
 </figure>
 </div>
+<aside id="footnotes-2" class="footnotes footnotes-end-of-section" role="doc-footnote">
+<hr>
+<ol start="3">
+<li id="fn3"><p>Organizations who did not participate in the initial survey or share their registration forms are welcome to to add their responses <a href="https://forms.office.com/e/WTqY4cDaKu">here</a> if interested. The survey analysis will be updated on request, to reflect additional responses.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside>
 </section>
 <section id="registration" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="registration"><span class="header-section-number">2.2</span> Registration</h2>
@@ -176,6 +219,8 @@ Caution
 </figure>
 </div>
 <p>Accountability as per the organizations procedures was the most cited purpose for registration, The purposes were also significantly varied - only 5 respondents shared the same set of purposes.</p>
+<section id="purpose-and-basis" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="purpose-and-basis"><span class="header-section-number">2.2.1</span> Purpose and basis</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figures/Purpose%20of%20the%20Registration.svg" class="img-fluid figure-img"></p>
@@ -186,9 +231,102 @@ Caution
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figures/Is%20it%20inter-agency.svg" class="img-fluid figure-img"></p>
-<figcaption>Inter-agency registration activities (29% of registering organizations)</figcaption>
+<figcaption>Inter-agency registration activities</figcaption>
 </figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Legal%20Basis.svg" class="img-fluid figure-img"></p>
+<figcaption>Legal basis cited by organizations for registration activities, with organizational procedures most frequently referenced</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Primary%20Policy%20for%20PI%20collection.svg" class="img-fluid figure-img"></p>
+<figcaption>Primary policy frameworks cited by respondent organizations for personal information collection</figcaption>
+</figure>
+</div>
+</section>
+<section id="deduplication" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="deduplication"><span class="header-section-number">2.2.2</span> Deduplication</h3>
+<p>The methods use to deduplicate<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> show extreme variance across all respondents, with only two responding organizations using the same set of deduplication methods.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Deduplication%20mechanisms.svg" class="img-fluid figure-img"></p>
+<figcaption>Deduplication mechanisms used by respondent organizations for registration and beneficiary data management</figcaption>
+</figure>
+</div>
+<p>For deduplication across organizations over a third of respondents refered to performing deduplication against WFP’s SCOPE system.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Deduplication%20against%20others.svg" class="img-fluid figure-img"></p>
+<figcaption>Deduplication methods used by respondent organizations when comparing beneficiary data against other organizations</figcaption>
+</figure>
+</div>
+<aside id="footnotes-3" class="footnotes footnotes-end-of-section" role="doc-footnote">
+<hr>
+<ol start="4">
+<li id="fn4"><p>Deduplication refers to its two main forms - deduplication of records of individuals or households in or across systems, and deduplication in reference to planned or received assistance.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside>
+</section>
+<section id="methods" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="methods"><span class="header-section-number">2.2.3</span> Methods</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Type%20of%20registration.svg" class="img-fluid figure-img"></p>
+<figcaption>Registration types used by respondent organizations, with multi-purpose registration systems most common</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Means%20of%20confirmation.svg" class="img-fluid figure-img"></p>
+<figcaption>Means of confirmation used by respondent organizations to verify beneficiary identity during registration</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Complaint%20and%20Feedback%20Mechanisms.svg" class="img-fluid figure-img"></p>
+<figcaption>Complaint and feedback mechanisms used by respondent organizations for beneficiary engagement and accountability</figcaption>
+</figure>
+</div>
+</section>
+<section id="authentication" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="authentication"><span class="header-section-number">2.2.4</span> Authentication</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Authentication%20before%20assistance.svg" class="img-fluid figure-img"></p>
+<figcaption>Authentication before assistance</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Authentication%20Mechanism.svg" class="img-fluid figure-img"></p>
+<figcaption>The authentication mechanisms used by organizations before providing assistance to beneficiaries</figcaption>
+</figure>
+</div>
+</section>
+<section id="data-sharing" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="data-sharing"><span class="header-section-number">2.2.5</span> Data sharing</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Data%20accessible%20for%20other%20agencies.svg" class="img-fluid figure-img"></p>
+<figcaption>Data accessibility for other agencies among respondent organizations</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Do%20you%20share%20the%20registration%20data%20with%20partners.svg" class="img-fluid figure-img"></p>
+<figcaption>Proportion of organizations sharing registration data with partner organizations</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Formalized%20Data%20Sharing%20Agreement.svg" class="img-fluid figure-img"></p>
+<figcaption>Proportion of organizations with formalized data sharing agreements among surveyed respondents</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="non-registrations-actors" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="non-registrations-actors"><span class="header-section-number">2.3</span> Non registrations actors</h2>
@@ -219,6 +357,12 @@ Caution
 <figcaption>Database management systems used by respondent organizations</figcaption>
 </figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/Is%20this%20system%20interoperable%20with%20other%20systems%20used%20in%20South%20Sudan.svg" class="img-fluid figure-img"></p>
+<figcaption>Interoperability of the system</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="data-sharing-graph" class="level1 page-columns page-full" data-number="3">
@@ -234,14 +378,8 @@ Caution
 </div>
 <p>Even among the small number of organizations surveys we can see significant fragmentation and loosely connected data sharing networks.</p>
 </section>
-<section id="data-journey" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Data Journey</h1>
-<p><em>This is a scrolling story of a scenario where data collection, exchange and limitations are highlighted along a persons journey, using a similar story-telling style to <a href="https://mschnetzer.github.io/scrollytell_gemeindebau/">this article</a></em></p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-</section>
-<section id="comparing-data-points" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Comparing Data Points</h1>
-<p><em>Getting all registration forms and comparing data variables. It can be visualized in two ways, with an upsetplot and a master excel file of all datapoints with colour coding for columns based on whether a variable is unique among respondents, a variation, or common.</em></p>
+<section id="comparing-data-points" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Comparing Data Points</h1>
 <p>The following plot visualizes each data point collected by each organization. The histogram on the left show the count of datapoints among organizations - for instance, a 5 beside “Full name” means that 5 organizations gather that same data point. The top histogram show the number of organizations that collect the exact same data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -249,11 +387,39 @@ Caution
 <figcaption>Registration data field overlaps across organizations. Left: frequency of each field; top: organizations with identical field sets. <em>Note: Some fields were normalized for variations in wording</em></figcaption>
 </figure>
 </div>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis posuere ligula sit amet lacinia. Duis dignissim pellentesque magna, rhoncus congue sapien finibus mollis. Ut eu sem laoreet, vehicula ipsum in, convallis erat. Vestibulum magna sem, blandit pulvinar augue sit amet, auctor malesuada sapien. Nullam faucibus leo eget eros hendrerit, non laoreet ipsum lacinia. Curabitur cursus diam elit, non tempus ante volutpat a. Quisque hendrerit blandit purus non fringilla. Integer sit amet elit viverra ante dapibus semper. Vestibulum viverra rutrum enim, at luctus enim posuere eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+</section>
+<section id="conclusion" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Conclusion</h1>
+<p>Overall, registration and beneficiary management practices are significantly varied. Along with limited data-sharing agreements and a low degree of commonality of data fields across registrations forms, these factors limit the interoperability and use of beneficiary data across organizations and sectors in South Sudan.</p>
+<p>Interoperability of data and systems is a key requirement for cross-organizational and cross-sectoral efforts for targeting, deduplication and referral.</p>
+<p>While signs of progress are evident from previous in-country efforts , these impacts have mostly been limited to within small consortia of actors or UN agencies. To better address the challenge its should be viewed as an entire response-level challenge that requires as response-level approach to address.</p>
+</section>
+<section id="references" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-ifrc_safe_sharing_interoperability" class="csl-entry" role="listitem">
+CIFRC. 2023. <span>“Investigating Safe Data Sharing and Systems Interoperability in Humanitarian Cash Assistance.”</span>
+</div>
+<div id="ref-currion_design_ssd" class="csl-entry" role="listitem">
+Currion. 2022. <span>“Design Process Report: CCD Data Governance Pilot South Sudan.”</span>
+</div>
+<div id="ref-ifrc_safe_sharing" class="csl-entry" role="listitem">
+Digital, Caribou. 2023. <span>“Investigating Safe Data Sharing in Humanitarian Cash Assistance.”</span>
+</div>
+<div id="ref-eif2017" class="csl-entry" role="listitem">
+European Commission. Directorate General for Informatics. 2017. <em>New <span>European</span> Interoperability Framework: Promoting Seamless Services and Data Flows for <span>European</span> Public Administrations</em>. LU: Publications Office.
+</div>
+<div id="ref-ifrc_geneva" class="csl-entry" role="listitem">
+International Federation of Red Cross and Red Crescent Societies. 2020. <span>“International <span>Federation</span> of <span>Red Cross</span> and <span>Red Crescent Societies</span>, <span>Geneva</span>.”</span> Koninklijke Brill NV. <a href="https://doi.org/10.1163/2210-7975_HRD-9813-2015012">https://doi.org/10.1163/2210-7975_HRD-9813-2015012</a>.
+</div>
+<div id="ref-mcnutt2025accessibletextdescriptionsupset" class="csl-entry" role="listitem">
+McNutt, Andrew, Maggie K McCracken, Ishrat Jahan Eliza, Daniel Hajas, Jake Wagoner, Nate Lanza, Jack Wilburn, Sarah Creem-Regehr, and Alexander Lex. 2025. <span>“Accessible Text Descriptions for UpSet Plots.”</span> <a href="https://arxiv.org/abs/2503.17517">https://arxiv.org/abs/2503.17517</a>.
+</div>
+</div>
 <!-- Footnotes -->
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/NC/">CC BY NC</a></div></div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
